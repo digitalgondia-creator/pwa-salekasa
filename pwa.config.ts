@@ -4,7 +4,7 @@ export default {
   id: '/',
   name: 'Digital Salekasa',
   shortName: 'Digital Salekasa',
-  description: 'सालेकसा, कचारगड व परिसराची ताजी बातमी, नोकऱ्या, शेती भाव, एसटी बस वेळापत्रक आणि स्थानिक खरेदी-विक्री.',
+  description: 'ससालेकसा की ताज़ा ख़बरें, सरकारी योजनाएं, जॉब्स व एसटी बस टाइमटेबल अब सीधे मोबाइल ऐप पर पाएं.',
   direction: 'auto',
   language: 'mr-IN',
   backgroundColor: '#ffffff',
