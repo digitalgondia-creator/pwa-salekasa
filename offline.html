@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="mr" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+  <title>तुम्ही ऑफलाइन आहात | Digital Salekasa</title>
+  <meta name="theme-color" content="#0046eb"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+    }
+    .offline-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 24px;
+      max-width: 440px;
+      width: 100%;
+      box-shadow: 0 15px 35px -5px rgba(0, 70, 235, 0.08), 0 0 1px 1px rgba(0,0,0,0.04);
+      border: 1px solid #e2e8f0;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    .brand-blue { color: #0046eb; }
+    .brand-orange { color: #ff6b00; }
+    .signal-icon {
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 16px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.8; }
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .btn-retry {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: #0046eb;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px 20px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 16px -4px rgba(0, 70, 235, 0.35);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-retry:active {
+      transform: scale(0.98);
+      background: #0036b3;
+    }
+    .helpline-box {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 13px;
+      color: #64748b;
+    }
+    .helpline-numbers {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .helpline-numbers a {
+      color: #0046eb;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 6px 12px;
+      background: #e6eefd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-card">
+    <div class="brand">
+      <span class="brand-blue">Digital</span><span class="brand-orange">Salekasa</span>
+    </div>
+    <div class="signal-icon">📶</div>
+    <h1>तुम्ही सध्या ऑफलाइन आहात</h1>
+    <p>इंटरनेट कनेक्शन बंद आहे. कृपया तुमचा मोबाईल डेटा किंवा वाय-फाय तपासा आणि खालील बटनावर टॅप करा.</p>
+    <button class="btn-retry" onclick="window.location.reload()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+      <span>पुन्हा प्रयत्न करा</span>
+    </button>
+    <div class="helpline-box">
+      <span>आपत्कालीन संपर्क (Emergency Help):</span>
+      <div class="helpline-numbers">
+        <a href="tel:112">पोलीस: 112</a>
+        <a href="tel:108">रुग्णवाहिका: 108</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
